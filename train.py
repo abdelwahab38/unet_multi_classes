@@ -128,9 +128,9 @@ if __name__ == '__main__':
     device = ("cuda" if torch.cuda.is_available() else "cpu" )
     args = get_args()
     
-    dir_data = f'./data/{args.folder}'
-    dir_checkpoint = f'./checkpoints/{args.folder}_b{args.batchsize}/'
-    dir_summary = f'./runs/{args.folder}_b{args.batchsize}'
+    dir_data = "C:\\Users\\ABDEL\\Downloads\\unet-multiclass-pytorch-master\\unet-multiclass-pytorch-master\\data"
+    dir_checkpoint = "C:\\Users\\ABDEL\\Downloads\\unet-multiclass-pytorch-master\\unet-multiclass-pytorch-master\\checkpoint"
+    dir_summary = "C:\\Users\\ABDEL\\Downloads\\unet-multiclass-pytorch-master\\unet-multiclass-pytorch-master\\runs"
     params = {'batch_size': args.batchsize, 'shuffle': True, 'num_workers': 4}
 
     make_checkpoint_dir(dir_checkpoint)
